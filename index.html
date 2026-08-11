@@ -3,41 +3,110 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#dfe9df">
+<meta name="theme-color" content="#e9eee6">
 <meta property="og:title" content="Botezul lui Ilarie Dumitru Ioan">
 <meta property="og:description" content="17 octombrie 2026 • Galați">
 <title>Botezul lui Ilarie Dumitru Ioan</title>
 <style>
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:#e8eee7}
-body{font-family:Georgia,"Times New Roman",serif}
-.wrap{width:min(100%,600px);margin:auto;position:relative;background:#fff}
-.invite{position:relative;width:100%;line-height:0}
-.invite img{width:100%;height:auto;display:block}
-.hotspot{position:absolute;display:block;border-radius:30px;text-indent:-9999px;overflow:hidden}
-.hotspot:focus{outline:3px solid #c49a50;outline-offset:3px}
-.wa{left:16%;right:16%;top:74.6%;height:7.7%}
-.church{left:7%;width:43%;top:84%;height:7%}
-.restaurant{right:7%;width:43%;top:84%;height:7%}
-.hint{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);font:12px Arial,sans-serif;color:#355044;background:#ffffffee;border:1px solid #b9c9ba;border-radius:20px;padding:8px 13px;box-shadow:0 4px 18px #0002;white-space:nowrap}
-@media(min-width:601px){.wrap{box-shadow:0 0 35px #0002}.hint{display:none}}
+html{scroll-behavior:smooth}
+body{margin:0;background:#dfe8df;color:#294536;font-family:Georgia,"Times New Roman",serif}
+.page{width:min(100%,620px);margin:auto;background:#fdfcf8;min-height:100vh;box-shadow:0 0 40px #263d2d25;overflow:hidden}
+.hero{min-height:700px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:55px 28px;background:
+radial-gradient(circle at 20% 15%,#fff 0 3px,transparent 4px),
+radial-gradient(circle at 80% 22%,#d4dfd0 0 2px,transparent 3px),
+linear-gradient(145deg,#f7f7ee,#e5eee3 55%,#d5e2d4)}
+.botanical{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.branch{position:absolute;width:210px;height:380px;border-left:2px solid #879c87;opacity:.65}
+.branch:before,.branch:after{content:"";position:absolute;width:80px;height:30px;border:1.5px solid #879c87;border-radius:100% 0 100% 0;transform:rotate(-30deg)}
+.branch:before{top:80px;left:-55px}.branch:after{top:145px;left:12px;transform:rotate(25deg)}
+.b1{left:-70px;top:-50px;transform:rotate(-18deg)}.b2{right:-70px;bottom:-50px;transform:rotate(162deg)}
+.cross{font-size:43px;color:#b58b42;margin-bottom:16px}
+.kicker{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#9b7637}
+.hello{font-size:22px;font-style:italic;margin:17px 0;color:#4a6252}
+.name{font-size:49px;line-height:1.08;color:#294536;font-weight:400;margin:10px 0 17px}
+.line{width:110px;height:1px;background:#b89450;margin:18px auto}
+.date{font-size:20px;letter-spacing:.08em}
+.baby{font-size:55px;margin:22px 0 8px}
+.subtitle{font-size:15px;line-height:1.7;max-width:430px;margin:auto;color:#566a5b}
+.content{padding:22px 20px 40px;background:#fdfcf8}
+.card{background:#fff;border:1px solid #cdb477;border-radius:25px;padding:22px 18px;margin:17px 0;box-shadow:0 10px 28px #2945360e}
+.title{text-align:center;color:#9b7637;font-size:15px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 17px}
+.detail{display:flex;gap:13px;align-items:flex-start;padding:10px 2px;border-bottom:1px dashed #d8ccb0}.detail:last-child{border-bottom:0}
+.ico{font-size:23px;width:30px;text-align:center}.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9b7637}.value{font-size:18px;line-height:1.45;color:#294536;font-weight:bold}
+.action{display:block;text-decoration:none;text-align:center;margin-top:13px;padding:13px 15px;border-radius:999px;font-family:Arial,sans-serif;font-weight:bold;font-size:14px;letter-spacing:.04em}
+.map{background:#edf3ec;color:#294536;border:1px solid #aabda8}.confirm{background:#294536;color:white;border:2px solid #b89450}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:12px}.person{text-align:center;padding:15px 8px;background:#f7faf6;border-radius:18px}.person h3{margin:0 0 8px;color:#9b7637;font-size:12px;letter-spacing:.12em}.person p{margin:0;font-size:15px;line-height:1.55}
+.quote{text-align:center;font-style:italic;line-height:1.7;font-size:17px}.quote small{font-style:normal;color:#9b7637}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.unit{text-align:center;background:#294536;color:white;border-radius:15px;padding:11px 3px}.num{display:block;font:bold 24px Arial}.lbl{font:10px Arial;text-transform:uppercase;opacity:.8}
+footer{text-align:center;padding:25px 15px;background:#e7eee5;color:#536957;font-size:12px}
+@media(max-width:420px){.hero{min-height:620px;padding:40px 20px}.name{font-size:39px}.people{grid-template-columns:1fr}.value{font-size:16px}}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <div class="invite">
-    <img src="invitatie-verde.png" alt="Invitație de botez pentru Ilarie Dumitru Ioan">
-    <a class="hotspot wa"
-       href="https://wa.me/40748574379?text=Bun%C4%83!%20Confirm%C4%83m%20cu%20drag%20prezen%C8%9Ba%20la%20botezul%20lui%20Ilarie%20Dumitru%20Ioan%20din%2017%20octombrie%202026."
-       aria-label="Confirmă prezența prin WhatsApp">Confirmă prezența</a>
-    <a class="hotspot church"
-       href="https://www.google.com/maps/search/?api=1&query=Biserica+Sf%C3%A2ntul+Mina+Gala%C8%9Bi"
-       target="_blank" rel="noopener" aria-label="Locația bisericii">Biserica</a>
-    <a class="hotspot restaurant"
-       href="https://www.google.com/maps/search/?api=1&query=Magic+Events+Gala%C8%9Bi"
-       target="_blank" rel="noopener" aria-label="Locația restaurantului">Restaurant</a>
-  </div>
+<main class="page">
+<section class="hero">
+<div class="botanical"><i class="branch b1"></i><i class="branch b2"></i></div>
+<div>
+<div class="cross">✝</div>
+<div class="kicker">Cu bucurie în suflet</div>
+<div class="hello">vă invităm să ne fiți alături la botezul</div>
+<div class="name">Ilarie<br>Dumitru Ioan</div>
+<div class="line"></div>
+<div class="date">17 OCTOMBRIE 2026</div>
+<div class="baby">♡</div>
+<div class="subtitle">O zi binecuvântată, o amintire pentru o viață întreagă și bucuria de a o împărtăși cu cei dragi.</div>
+</div>
+</section>
+
+<section class="content">
+<div class="card">
+<h2 class="title">Sfântul Botez</h2>
+<div class="detail"><span class="ico">⛪</span><div><div class="label">Biserica</div><div class="value">Sfântul Mina, Galați</div></div></div>
+<div class="detail"><span class="ico">🕔</span><div><div class="label">Ora</div><div class="value">17:00</div></div></div>
+<a class="action map" href="https://www.google.com/maps/search/?api=1&query=Biserica+Sf%C3%A2ntul+Mina+Gala%C8%9Bi" target="_blank" rel="noopener">📍 VEZI LOCAȚIA BISERICII</a>
+</div>
+
+<div class="card">
+<h2 class="title">Petrecerea</h2>
+<div class="detail"><span class="ico">🍽️</span><div><div class="label">Restaurant</div><div class="value">Magic Events, Galați</div></div></div>
+<div class="detail"><span class="ico">🕖</span><div><div class="label">Ora</div><div class="value">19:00</div></div></div>
+<a class="action map" href="https://www.google.com/maps/search/?api=1&query=Magic+Events+Gala%C8%9Bi" target="_blank" rel="noopener">📍 VEZI LOCAȚIA RESTAURANTULUI</a>
+</div>
+
+<div class="card">
+<div class="people">
+<div class="person"><h3>PĂRINȚI</h3><p>Vistian Alexandru Mihai<br>și<br>Vistian Raluca Violeta</p></div>
+<div class="person"><h3>NAȘI</h3><p>Blidaru Dorin Dumitru<br>și<br>Blidaru Rodica Camelia</p></div>
+</div>
+</div>
+
+<div class="card">
+<h2 class="title">Până la marea zi</h2>
+<div class="count">
+<div class="unit"><span id="d" class="num">--</span><span class="lbl">zile</span></div>
+<div class="unit"><span id="h" class="num">--</span><span class="lbl">ore</span></div>
+<div class="unit"><span id="m" class="num">--</span><span class="lbl">minute</span></div>
+<div class="unit"><span id="s" class="num">--</span><span class="lbl">secunde</span></div>
+</div>
+</div>
+
+<div class="card quote">
+„Lăsați copiii să vină la Mine, căci a unora este Împărăția cerurilor.”
+<br><small>Matei 19:14</small>
+</div>
+
+<div class="card">
+<h2 class="title">Ne confirmați prezența?</h2>
+<p style="text-align:center;line-height:1.6">Ne-ar face mare plăcere să ne fiți alături. 💚</p>
+<a class="action confirm" href="https://wa.me/40748574379?text=Bun%C4%83!%20Confirm%C4%83m%20cu%20drag%20prezen%C8%9Ba%20la%20botezul%20lui%20Ilarie%20Dumitru%20Ioan%20din%2017%20octombrie%202026." target="_blank" rel="noopener">💚 CONFIRMĂ PREZENȚA PE WHATSAPP</a>
+</div>
+</section>
+<footer>Ilarie Dumitru Ioan • 17 octombrie 2026 • Galați</footer>
 </main>
-<div class="hint">Apasă pe „Confirmă prezența” pentru WhatsApp</div>
+<script>
+const target=new Date("2026-10-17T17:00:00+03:00").getTime();
+function tick(){let x=Math.max(0,target-Date.now());d.textContent=Math.floor(x/86400000);h.textContent=String(Math.floor(x%86400000/3600000)).padStart(2,"0");m.textContent=String(Math.floor(x%3600000/60000)).padStart(2,"0");s.textContent=String(Math.floor(x%60000/1000)).padStart(2,"0")}tick();setInterval(tick,1000);
+</script>
 </body>
 </html>
